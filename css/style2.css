@@ -1,0 +1,64 @@
+/*estilo general del documento*/
+html{
+	font-family: Verdana;
+	font-size: .9em;
+	color: black;
+}
+/*estilo para body*/
+body{
+	margin: 0px;
+	background: white;
+}
+body section{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+/*estilo para el encabezado*/
+header{
+	height: 200px;
+	background-color: black;
+	background: url("../img/logo2.png") no-repeat 50% 50% white;
+}
+body nav{
+	font-size: 0.8em;
+	float: left;
+}
+body nav a:link{
+	color: black;
+	text-decoration: none;
+}
+body nav a:visited{
+	color: red;
+	text-decoration: none;
+}
+fieldset{
+	border-radius: 10px;
+	border: 2px solid #F11E22;
+	font-weight: bold;
+	color: #F11E22;
+}
+
+/*CSS responsive*/
+@media only screen and (max-width: 1280px) {
+	nav{
+		position: relative;
+		display: block;
+	}
+	aside{
+		display: block;
+		position: relative;
+		width: 95%;
+		height: 100%
+	}
+	section{
+		position: relative;
+		width:100%;
+	}
+	footer{
+		display: inline-block;
+		width: 100%;
+		height: 50%;
+	}
+}

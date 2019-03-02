@@ -1,0 +1,210 @@
+﻿/*estilo general del documento*/
+html{
+	font-family: Verdana;
+	font-size: .9em;
+	color: white;
+}
+/*estilo para body*/
+body{
+	background-color: #FFFB00;
+	margin: 0px;
+	display: block;
+}
+
+/*estilo para el encabezado*/
+header{
+	height: 150px;
+	background:url("../img/logo.png") no-repeat 50% 50% black;
+	display: block;
+}
+
+/* estilo para el elemento nav*/
+nav{
+	margin: 10px;
+	float: left;
+	width: 15%;
+	display:inline-block;
+}
+/*estilo menú incluido dentro elemento nav*/
+#menu ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	min-width: 150px;
+}
+/*estilo para los botones del menú*/
+li.menubutton{
+	padding: 10px;
+	background-color: white;
+	border: 4px solid black;
+	border-radius: 10px;
+	box-shadow: 5px 5px black;
+	font-family: Comic Sans MS;
+	font-size: .8em;
+	color: black;
+	font-weight: bold;
+}
+li.menubutton:hover{
+	color: white;
+	background-color: #FFFB00;
+}
+/*estilo de los enlaces contenidos dentro de los botones*/
+li.menubutton a:link{
+	color: black;
+	text-decoration: none;
+}
+li.menubutton a:visited{
+	color:black;
+}
+li.menubutton a:hover{
+	color: #F11E22;
+}
+
+/*estilo para section*/
+section{
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	display: inline-block;
+	width: 55%;
+}
+/*estilo para article*/
+section article{
+	background: black;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 30px;
+	box-shadow: 5px 5px #F11E22;
+}
+/*estilo contenedor de elementos dentro article*/
+#contenedor{
+	border: 5px solid white;
+	border-radius: 10px;
+	padding: 10px;
+}
+section article h2{
+	color: yellow;
+	font-size: 1.25em;
+	margin-top: 15px;
+}
+section article img:hover{
+	opacity: .5;
+}
+/*estilo para las imagenes incluidas dentro article*/
+#image1{
+	float: left;
+	padding-right: 15px;
+}
+#image2{
+	float: left;
+	padding-right: 15px;
+}
+/*pie de foto imagen1*/
+#caption1{
+	font-size: .8em;
+	font-style: italic;
+	float: left;
+	width: 245px;
+	padding-right: 15px;
+}
+/*pie de foto imagen2*/
+#caption2{
+	font-size: .8em;
+	font-style: italic;
+	float:left;
+	width: 244px;
+	padding-right: 15px;
+}
+/*Estilo para los enlaces incluidos dentro de los artículos*/
+article p a:link{
+	color: white;
+	text-decoration: none;
+}
+article p a:visited{
+	color: yellow;
+	text-decoration: none;
+}
+article p a:hover{
+	color: black;
+	background-color: yellow;
+}
+
+/*sección aside*/
+aside{
+	float: right;
+	width: 20%;
+	background: black;
+	border-radius: 10px;
+	margin: 10px;
+	margin-right: 20px;
+	padding: 10px;
+	display:inline-block;
+	border: 1px solid black;
+	height: 480px;
+	box-shadow: 5px 5px #F11E22;
+}
+/*formulario*/
+fieldset{
+	border-radius: 10px;
+	border: 2px solid yellow;
+	font-weight: bold;
+	padding: 5px;
+}
+/*tabla dentro sección aside*/
+.tablestyle{
+	margin-left: 10px;
+	background: black;
+}
+.tittle_table{
+	margin-left: 10px;
+	font-weight: bold;
+}
+.avatar{
+	width: 48px;
+	height: 48px;
+}
+td, th{
+	font-size: .8em;
+	color: white;
+	text-align: left;
+}
+td{
+	text-align: left;
+}
+
+/*estilo general para pie de documento*/
+footer p{
+	text-align: center;
+	color: black;
+	font-family: Arial black;
+}
+footer p img{
+	padding: 3px;
+	margin: 10px;
+}
+
+/*CSS responsive*/
+@media only screen and (max-width: 870px) {
+	nav{
+		position: relative;
+		display: block;
+		width: 98%;
+		height: 220px;
+		text-align: center;
+	}
+	aside{
+		display: block;
+		position: relative;
+		width: 94%;
+		height: 100%;
+	}
+	section{
+		position: relative;
+		width:100%;
+	}
+	footer{
+		display: inline-block;
+		width: 100%;
+		height: 50%;
+	}
+}
