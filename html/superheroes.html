@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Inscripción</title>
+	<link rel="icon" type="image/png" href="../img/favicon.png"/>
+	<link rel="stylesheet" type="text/css" href="../css/style2.css">
+</head>
+<body>
+	<nav>
+		<p><a href="../index.html"><img src="../img/back16.png"/><br/>Página principal</a>
+	</nav>
+	<header>
+	</header>
+	<section>
+		<form action=""method="POST">
+			<fieldset>
+				<legend>Formulario de inscripción</legend>
+					<fieldset>
+						<legend>Datos personales</legend>
+							<p>
+								<label for="name">Nombre:</label>
+								<input type="text" name="name" id="name" maxlength="25" required/>
+								<label for="surname">Apellidos:</label>
+								<input type="text" name="surname" id="surname" maxlength="40" required/>
+							</p>
+							<p>
+								<label for="birthdate">Fecha de nacimiento:</label>
+								<input type="date" name="birthdate" id="date"/>
+							</p>
+							<p>
+								<label for="address">Dirección:</label>
+								<input type="text" name="address" id="address"/>
+								<label for="postcode">Codigo postal:</label>
+								<input type="text" name="postcode" id="postcode" maxlenght="5" pattern="[0-9]*"/>
+								<label for="address">Provincia/Estado:</label>
+								<input type="text" name="state" id="state" maxlength="20"/><br/><br/>
+								<label for="address">País:</label>
+								<input type="text" name="country" id="country" maxlength="20"/>
+							</p>
+							<p>
+								<label for="type">Tipo:</label>
+								<input list="superhero_group">
+								<datalist id="superhero_group">
+									<option value="Vengadores">
+									<option value="Deadpool">
+									<option value="Guardianes">
+									<option value="X-men">
+								</datalist>
+								<label for="mail">mail:</label>
+								<input type="email" name="mail" id="mail" required placeholder="ejemplo@ejemplo.com"/>
+							</p>
+							<p>
+								<label for="photo">Foto:</label>
+								<input type="file" name="photo" id="photo" accept=".jpg,.png,.jpeg" multiple/>
+							</p>
+					</fieldset>
+					<fieldset>
+						<legend>Datos académicos</legend>
+							<p>
+								<label for="course">Curso:</label>
+								<select name="course">
+									<option value="MARVEL">MARVEL</option>
+									<option value="DC">DC</option>
+								</select>
+								<input type="radio" name="firstcourse"/><label for="firstcourse">Primer curso</label>
+								<input type="radio" name="secondcourse"/><label for="secondcourse">Segundo curso</label>
+							</p>
+							<p>
+								Superpoderes:
+								<input type="checkbox" name="weather"/><label for="weather">Control del clima</label>
+								<input type="checkbox" name="fire"/><label for="fire">Uso del fuego</label>
+								<input type="checkbox" name="psychic"/><label for="psychic">Poder psíquico</label>
+								<input type="checkbox" name="spacetime"/><label for="spacetime">Control espacio-tiempo</label>
+								<input type="checkbox" name="telekinesis"/><label for="telekinesis">Telequinesis</label>
+								<input type="checkbox" name="mutatio"/><label for="mutation">Mutación</label>
+							</p>
+							<p>
+								<label for="numbersujects">Número de poderes:</label>
+								<input type="number" max="6" min="1"/>
+							</p>
+							<p>
+								<label for="observation">Observaciones:</label>
+								<textarea name="observation"></textarea>
+							</p>
+					</fieldset>
+							<input type="submit" value="Enviar"/>
+							<input type="reset" value="Borrar"/>
+				</fieldset>
+			</form>
+	</section>
+</body>
+<footer>
+</footer>
+</html>
